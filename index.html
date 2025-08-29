@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat Uygulaması</title>
+</head>
+<body>
+  <div id="auth">
+    <h2>Giriş Yap</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Şifre">
+    <button onclick="login()">Giriş</button>
+    <button onclick="register()">Kayıt Ol</button>
+  </div>
+
+  <div id="chat-area" style="display: none;">
+    <div id="chat" style="height: 400px; overflow-y: scroll; border: 1px solid #ccc;"></div>
+    <input type="text" id="message" placeholder="Mesaj yaz...">
+    <button id="send">Gönder</button>
+    <button onclick="logout()">Çıkış</button>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
